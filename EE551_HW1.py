@@ -24,18 +24,18 @@ def numbers_and_strings():
     print(y)
 
     # Repeat variable y 5 times
-    5*y
+    z=5*y
+    print(z)
     # What is the length of z?
-    z = 'z'
     length = len('z')
     print(length)
     # Concatenate variable y with string " is good"
-    y = y+" is good"
-    print(y)
+    m = z+" is good"
+    print(m)
     # Replace "good" with "awesome" in variable m and assign it to a new variable n
-    m = "good"
-    m = "awesome"
-    n = m
+    n = m[:-4]
+    n = n+"awesome"
+    print(n)
     return x, y, z, length, m, n
 
 
@@ -61,27 +61,29 @@ def lists():
     c = r[0][2]
     d = r[1][2]
     e = r[2][2]
-    print (c,d,e)
+    c = [c,d,e]
+    print (c)
     # Collect only the even items of the diagonal of matrix A using list comprehension
     f = r[0][0]
     g = r[2][2]
     h = r[0][2]
     i = r[2][0]
-    print (f,g,h,i)
+    d = [f,g,h,i]
+    print (d)
     # We can convert a single character to its underlying integer code (e.g., its ASCII byte value)
     # by passing it to the built-in ord function. Generate a list of these integers to represent
     # each character of the string "Stevens" using list comprehension.
-    d = "Stevens"
-    c = len(d)
+    z = "Stevens"
+    y = len(z)
     o = []
     r = 0
-    for x in range (0,c):
-        p = d[r]
+    for x in range (0,y):
+        p = z[r]
         r = r+1
         o = o+[ord(p)]
         
     print (o)    
-    return p, r, c, d, o, e, f, g, h, i
+    return p, r, c, d, o
 
 
 def dictionaries():
